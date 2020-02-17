@@ -9,7 +9,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomePageComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'employees', component: ListEmployeesComponent },
-  { path: 'employees/create', loadChildren: './employee/employee.module#EmployeeModule' },
+  { path: 'employees/create', component: CreateEmployeeComponent},
   // wild card route
   { path: '**', component: PageNotFoundComponent }
 ];
