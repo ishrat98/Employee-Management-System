@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { IEmployee } from './IEmployee';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { IEmployee } from '../components/create-employee/IEmployee';
 
 @Injectable()
 export class EmployeeService {
